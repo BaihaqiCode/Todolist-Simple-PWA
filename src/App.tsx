@@ -91,7 +91,7 @@ function App() {
           <form className="flex flex-col gap-3" onSubmit={handleTambahMisi}>
             <input type="text" placeholder="Rencanamu..." className="w-full p-3 bg-gray-100 border-2 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-habitica-blue transition" value={inputJudul} onChange={(e) => setInputJudul(e.target.value)} />
             <textarea placeholder="Deskripsi (opsional)..." className="w-full p-3 bg-gray-100 border-2 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-habitica-blue transition" rows={2} value={inputDeskripsi} onChange={(e) => setInputDeskripsi(e.target.value)} />
-            <button type="submit" className="bg-habitica-blue text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-500 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed self-end" disabled={inputJudul.trim() === ''}>Tambah Misi</button>
+            <button type="submit" className="bg-habitica-blue text-white font-bold px-6 py-3 rounded-lg hover:bg-blue-500 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed self-end" disabled={inputJudul.trim() === ''}>Tambah</button>
           </form>
         </div>
         <main className="space-y-3">
