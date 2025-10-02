@@ -1,0 +1,41 @@
+/* nunito-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/nunito-v32-latin-regular.woff2') format('woff2');
+}
+/* nunito-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/nunito-v32-latin-600.woff2') format('woff2');
+}
+/* nunito-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/nunito-v32-latin-700.woff2') format('woff2');
+}
+
+/* Menggunakan sintaks baru yang benar dari Tailwind v4 */
+@import "tailwindcss";
+
+/* LANGKAH 1: TERAPKAN FONT SEBAGAI DEFAULT */
+@layer base {
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+/* LANGKAH 2: DEFINISIKAN WARNA KUSTOM ANDA */
+@theme {
+  --color-habitica-purple: #41417A;
+  --color-habitica-blue: #2493A5;
+}
+
